@@ -103,7 +103,9 @@ function mostrarItem() {
 
 function salvarEdicao() {
   const itemEditado = document.querySelector(`[data-value="${itemEditar}"] input[type="text"]`);
-  console.log(itemEditado.value);
+  listaDeItens[itemEditar].valor = itemEditado.value;
+  itemEditar = -1;
+  mostrarItem();
 }
 
 
