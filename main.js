@@ -43,12 +43,13 @@ function mostrarItem() {
         </li>
       `
   })
-  
+
   const inputsCheck = document.querySelectorAll('input[type="checkbox"]');
   
   inputsCheck.forEach(i => {
     i.addEventListener('click', (evento) => {
-      console.log("Fui clicado!");
+      console.log(evento.target.parentElement
+        .parentElement.getAttribute('data-value'));
     })
   })
 }
