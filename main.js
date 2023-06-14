@@ -15,7 +15,7 @@ if (listaRecuperada) {
   listaDeItens = JSON.parse(listaRecuperada)
   mostrarItem();
 } else {
-  listaRecuperada = []
+  listaRecuperada = [];
 }
 
 form.addEventListener('submit', function(evento) {
